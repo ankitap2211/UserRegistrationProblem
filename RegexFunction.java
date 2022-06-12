@@ -7,4 +7,11 @@ public class RegexFunction {
             System.out.println("First name of user " + name + " is " + name.matches("[A-Z][a-z]{3,}"));
         }
     }
+
+    void lastName() {
+        String lname[] = {"Patil", "123Abc", "@kiwate", "$abc"};
+        for (String name : lname) {
+            System.out.println("Last name of user " + name + " is " + name.matches("[A-Z][a-z]{3,}"));
+        }
+    }
 }
