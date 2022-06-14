@@ -21,4 +21,11 @@ public class RegexFunction {
             System.out.println("Email of the user " + e + " is " + e.matches("[abc][\\.][a-z]+[@][bl][\\.][co][\\.][a-z]{2,3}"));
         }
     }
+
+    void mobile() {
+        String phNumber[] = {"8974561231", "91 12345678912", "90 789546123", "91 789456", "91 9919819801"};
+        for (String number : phNumber) {
+            System.out.println("Mobile number of user " + number + " is " + number.matches("^(91\s)[789][0-9]{9}$"));
+        }
+    }
 }
