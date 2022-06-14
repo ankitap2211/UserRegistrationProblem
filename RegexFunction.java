@@ -24,16 +24,21 @@ public class RegexFunction {
 
     void mobile() {
         String phNumber[] = {"8974561231", "91 12345678912", "90 789546123", "91 789456", "91 9919819801"};
-        for (String number : phNumber) {
-            System.out.println("Mobile number of user " + number + " is " + number.matches("^(91\s)[789][0-9]{9}$"));
+        for (String name : phNumber) {
+            System.out.println("Mobile number of user " + name + " is " + name.matches("^(91\s)[789][0-9]{9}$"));
         }
     }
 
-    void password() {
-        String password[] = {"1234qwer", "qwertyurt", "@789kjhg", "#qwer65430", "abcdefgh"};
-        for (String name : password) {
-            System.out.println("Password of user " + name + " is " + name.matches("[a-zA-Z]{8,}$"));
+    void passwordAtLeastOne() {
+        String password1[] = {"Ascbhyesw", "1wertahs", "@wersdfgh", "AAlkhyts", "a123smnh"};
+        for (String name : password1) {
+            System.out.println("Password at least one upper case of user " + name + " is " + name.matches("[A-Z]{1}[a-z]{8,}"));
         }
     }
 }
-}
+
+
+
+
+
+
