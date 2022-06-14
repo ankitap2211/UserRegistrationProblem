@@ -28,4 +28,12 @@ public class RegexFunction {
             System.out.println("Mobile number of user " + number + " is " + number.matches("^(91\s)[789][0-9]{9}$"));
         }
     }
+
+    void password() {
+        String password[] = {"1234qwer", "qwertyurt", "@789kjhg", "#qwer65430", "abcdefgh"};
+        for (String name : password) {
+            System.out.println("Password of user " + name + " is " + name.matches("[a-zA-Z]{8,}$"));
+        }
+    }
+}
 }
