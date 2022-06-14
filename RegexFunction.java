@@ -35,6 +35,13 @@ public class RegexFunction {
             System.out.println("Password at least one upper case of user " + name + " is " + name.matches("[A-Z]{1}[a-z]{8,}"));
         }
     }
+
+    void passwordAtLeastNum() {
+        String password2[] = {"1wertyuA", "wedsgc23e", "jngrw#gt", "ytgve4Ski"};
+        for (String name : password2) {
+            System.out.println("Password at least one numeric of user " + name + " is " + name.matches("[0-9A-Za-z]{8,}$"));
+        }
+    }
 }
 
 
