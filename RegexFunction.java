@@ -14,4 +14,11 @@ public class RegexFunction {
             System.out.println("Last name of user " + name + " is " + name.matches("[A-Z][a-z]{3,}"));
         }
     }
+
+    void email() {
+        String email[] = {""};
+        for (String e : email) {
+            System.out.println("Email of the user " + e + " is " + e.matches("[abc][\\.][a-z]+[@][bl][\\.][co][\\.][a-z]{2,3}"));
+        }
+    }
 }
